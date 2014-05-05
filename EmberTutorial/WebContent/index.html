@@ -14,8 +14,8 @@
 </head>
 <body>
 	<script type="text/x-handlebars" data-template-name="application">
-		<nav class="navbar navbar-default container" role="navigation">
-				<div class="container-fluid">
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid container">
 				<div class="navbar-header">
 					{{#link-to 'index' class="navbar-brand"}}Flint & Flame{{/link-to}}					
 				</div>
@@ -32,10 +32,11 @@
 		<div class="container">
 			{{outlet}}
 		</div>
-		<footer class="container">
-			<hr />
-	    	<p class='pull-left'>&copy; 2013 The Flint &amp; Flame</p>
-	    	<p class='pull-right'>{{#link-to 'credits'}}Credits{{/link-to}}</p>
+		<footer class="modal-footer">
+			<div class = "container">
+				<p class='pull-left'>&copy; 2013 The Flint &amp; Flame</p>
+		    	<p class='pull-right'>{{#link-to 'credits'}}Credits{{/link-to}}</p>
+	    	<div/>
 		</footer>
     </script>
 	<script type="text/x-handlebars" data-template-name="index">
